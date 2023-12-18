@@ -1,1 +1,91 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: green;
+  background-image: url(https://img.freepik.com/vektoren-premium/casino-spielkarten-leer-banner-vorlage-hintergrund_313905-234.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.container-fluid {
+  margin-top: 15px;
+}
+
+.card {
+  display: inline-block;
+  margin: auto;
+  height: 500px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid #bdbdbd;
+  position: relative;
+  text-align: center;
+
+  .header-card {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    font-size: 70px;
+  }
+  .footer-card {
+    position: absolute;
+    bottom: -10px;
+    right: 15px;
+    font-size: 70px;
+    transform: scaleY(-1);
+  }
+  .num-card {
+    line-height: 475px;
+    font-size: 150px;
+  }
+}
+
+.card.♦,
+.card.♥ {
+  color: red;
+}
+.card.♠,
+.card.♣ {
+  color: black;
+}
+
+/* CSS */
+.button-81 {
+  margin-top: 10px;
+  background-color: #fff;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: #0d172a;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-81:hover {
+  background-color: #1e293b;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .button-81 {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
+}
